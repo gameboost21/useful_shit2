@@ -3,7 +3,7 @@
 
 # Reading the current user for automation purposes
 echo "Please enter the user with which you initially logged on"
-read $getusername
+read getusername
 echo "Read Successfull"
 
 # List of Packages
@@ -28,7 +28,7 @@ cd /home/$getusername/
 chmod +x get-docker.sh
 
 # Running the executable .sh-File
-sudo ./home/$getusername/get-docker.sh
+./get-docker.sh
 
 # Adding the current User to the Docker group
 sudo usermod -aG docker $getusername
