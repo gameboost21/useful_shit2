@@ -3,12 +3,8 @@
 
 # Reading the current user for automation purposes
 echo "Please enter the user with which you initially logged on"
-read $getusername
+read getusername
 echo "Read Successfull"
-
-# Entering sudo user
-sudo su
-echo "Entering sudo successfull"
 
 # List of Packages
 packagelist=(libffi-dev libssl-dev python3 python3-pip)
